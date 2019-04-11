@@ -1,5 +1,7 @@
+from __future__ import print_function 
 import argparse
 import subprocess
+
 
 
 parser = argparse.ArgumentParser(description="""Take the first line of a file and copy it to the clipboard 
@@ -15,7 +17,7 @@ def print_and_copy():
     line_entries = first_line.split(args['delimiter'])
     out_text =  '\n'.join(line_entries)
     write_to_clipboard(out_text)
-    print out_text
+    print(out_text)
 
 def write_to_clipboard(output):
     """
