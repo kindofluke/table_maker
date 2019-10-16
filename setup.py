@@ -10,5 +10,5 @@ setup(name='table maker',
       packages=['table_maker'],
       zip_safe=False,
       entry_points={
-          'console_scripts':['tablem=table_maker:print_and_copy']
+          'console_scripts':['tablem=table_maker.table_maker:print_and_copy']
       })
