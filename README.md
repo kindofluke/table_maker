@@ -25,7 +25,10 @@ column
 Create an alias  in your bashprofile
 
 ```
-alias tablem="python [PATH TO PROJECT]/table_maker.py"
+export PYTHONPATH="path_to/table_maker
+alias tablem="python3 -m table_maker.table_maker"
 ```
+
+You don't techincally need python3 but best to be on the safe side. 
 
 
